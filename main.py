@@ -1,4 +1,4 @@
-import pygame, math, numpy
+import pygame, math
 
 WIDTH, HEIGHT = 900, 500
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -129,11 +129,11 @@ def main():
                     game_started = False
 
                 if (last_pos[0] < initial_mouse_pos[0] and pos[0] > initial_mouse_pos[0]) and current_drawing_direction == "clockwise":
-                    display_game_status("Game over!")
+                    display_game_status("Another try?")
                     game_started = False
                 
                 if (last_pos[0] > initial_mouse_pos[0] and pos[0] < initial_mouse_pos[0]) and current_drawing_direction == "counterclockwise":
-                    display_game_status("Game over!")
+                    display_game_status("Another try?")
                     game_started = False
 
 
